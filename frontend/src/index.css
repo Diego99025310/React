@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-brand-black text-brand-white min-h-screen font-sans;
+}
+
+a {
+  @apply text-brand-pink hover:text-brand-purple transition-colors;
+}
+
+button {
+  @apply font-semibold;
+}
+
+@layer components {
+  .container {
+    @apply mx-auto w-full max-w-6xl;
+  }
+
+  .card {
+    @apply relative grid gap-6 rounded-3xl border border-white/10 bg-neutral-900/80 p-8 shadow-2xl backdrop-blur;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% -10%, rgba(255, 255, 255, 0.4), transparent 65%);
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  .card > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .message {
+    @apply text-sm font-medium;
+  }
+}
