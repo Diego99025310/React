@@ -3,20 +3,35 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "test": "node --test",
-        "start": "node src/server.js"
-    },
+  "dev": "nodemon src/server.js",
+  "start": "node src/server.js"
+},
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "description": "",
+    "description": "![GitHub last commit](https://img.shields.io/github/last-commit/Diego99025310/Teste?style=for-the-badge)\r ![GitHub repo size](https://img.shields.io/github/repo-size/Diego99025310/Teste?color=ff69b4&style=for-the-badge)\r ![Node.js CI](https://img.shields.io/badge/tests-node--test-blueviolet?style=for-the-badge)\r ![License: MIT](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)",
     "dependencies": {
         "bcryptjs": "^3.0.2",
         "better-sqlite3": "^12.4.1",
+        "cors": "^2.8.5",
+        "dotenv": "^17.2.3",
         "express": "^5.1.0",
         "jsonwebtoken": "^9.0.2"
     },
     "devDependencies": {
+        "nodemon": "^3.1.10",
         "supertest": "^7.1.4"
-    }
+    },
+    "directories": {
+        "doc": "docs",
+        "test": "tests"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Diego99025310/React.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Diego99025310/React/issues"
+    },
+    "homepage": "https://github.com/Diego99025310/React#readme"
 }
